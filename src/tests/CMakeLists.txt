@@ -21,7 +21,7 @@ target_link_libraries(animated_counter_test
 	cbehave
 	cdogs
 	cdogs_proto
-	SDL2::SDL2
+	SDL2::Main
 	${EXTRA_LIBRARIES})
 add_test(NAME animated_counter_test COMMAND animated_counter_test)
 
@@ -33,7 +33,7 @@ target_link_libraries(actor_test
 	cbehave
 	cdogs
 	cdogs_proto
-	SDL2::SDL2
+	SDL2::Main
 	${EXTRA_LIBRARIES})
 add_test(NAME actor_test COMMAND actor_test)
 
@@ -45,7 +45,7 @@ target_link_libraries(autosave_test
 	cbehave
 	cdogs
 	cdogs_proto
-	SDL2::SDL2
+	SDL2::Main
 	${EXTRA_LIBRARIES})
 add_test(NAME autosave_test COMMAND autosave_test)
 
@@ -76,7 +76,7 @@ target_link_libraries(config_test
 	cbehave
 	cdogs
 	cdogs_proto
-	SDL2::SDL2
+	SDL2::Main
 	${EXTRA_LIBRARIES})
 add_test(NAME config_test COMMAND config_test)
 
@@ -85,7 +85,7 @@ target_link_libraries(json_test
 	cbehave
 	cdogs
 	cdogs_proto
-	SDL2::SDL2
+	SDL2::Main
 	${EXTRA_LIBRARIES})
 add_test(NAME json_test COMMAND json_test)
 
@@ -94,7 +94,7 @@ target_link_libraries(minkowski_hex_test
 	cbehave
 	cdogs
 	cdogs_proto
-	SDL2::SDL2
+	SDL2::Main
 	${EXTRA_LIBRARIES})
 add_test(NAME minkowski_hex_test COMMAND minkowski_hex_test)
 
@@ -103,8 +103,8 @@ target_link_libraries(pic_test
 	cbehave
 	cdogs
 	cdogs_proto
-	SDL2::SDL2
-	SDL2_image::SDL2_image
+	SDL2::Main
+	SDL2::Image
 	${EXTRA_LIBRARIES})
 # TODO: test disabled since Travis-CI fails with "No available video device"
 #add_test(NAME pic_test COMMAND pic_test)
@@ -114,7 +114,7 @@ target_link_libraries(player_test
 	cbehave
 	cdogs
 	cdogs_proto
-	SDL2::SDL2
+	SDL2::Main
 	${EXTRA_LIBRARIES})
 add_test(NAME player_test COMMAND player_test)
 
@@ -123,5 +123,5 @@ target_link_libraries(utils_test
 	cbehave
 	cdogs
 	cdogs_proto
-	SDL2::SDL2 ${EXTRA_LIBRARIES})
+	SDL2::Main ${EXTRA_LIBRARIES})
 add_test(NAME utils_test COMMAND utils_test)

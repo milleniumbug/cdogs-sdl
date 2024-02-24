@@ -9,6 +9,8 @@ set(VERSION_MINOR "0")
 set(VERSION_PATCH "0")
 set(VERSION "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}")
 
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/sdl2)
+
 # Optionally configure CI files since they are excluded in source archives
 if(EXISTS ${CMAKE_SOURCE_DIR}/.github/workflows/cmake.yml.cmake)
 	configure_file(
